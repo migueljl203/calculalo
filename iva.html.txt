@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora IVA</title>
+</head>
+<body>
+
+<h1>Calculadora IVA</h1>
+
+<input id="precio" type="number" placeholder="Precio">
+<button onclick="calcular()">Calcular IVA</button>
+
+<p id="resultado"></p>
+
+<script>
+function calcular(){
+let p = Number(document.getElementById("precio").value);
+document.getElementById("resultado").innerText = p * 1.21;
+}
+</script>
+
+</body>
+</html>
